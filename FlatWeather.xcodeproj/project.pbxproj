@@ -19,6 +19,7 @@
 		B92ED73F1D515C8600B5778D /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92ED73E1D515C8600B5778D /* Temperature.swift */; };
 		B92ED7411D515CBF00B5778D /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92ED7401D515CBF00B5778D /* Forecast.swift */; };
 		B92ED7431D515CD400B5778D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92ED7421D515CD400B5778D /* Date.swift */; };
+		B92ED7451D515DE000B5778D /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92ED7441D515DE000B5778D /* WeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B92ED73E1D515C8600B5778D /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		B92ED7401D515CBF00B5778D /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		B92ED7421D515CD400B5778D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		B92ED7441D515DE000B5778D /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		B92ED7371D515AFE00B5778D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B92ED7441D515DE000B5778D /* WeatherCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				B92ED73A1D515B9E00B5778D /* CurrentWeather.swift in Sources */,
 				B92ED7431D515CD400B5778D /* Date.swift in Sources */,
 				B92ED7211D51545000B5778D /* AppDelegate.swift in Sources */,
+				B92ED7451D515DE000B5778D /* WeatherCell.swift in Sources */,
 				B92ED73F1D515C8600B5778D /* Temperature.swift in Sources */,
 				B92ED7411D515CBF00B5778D /* Forecast.swift in Sources */,
 				B92ED73C1D515BC300B5778D /* Constants.swift in Sources */,

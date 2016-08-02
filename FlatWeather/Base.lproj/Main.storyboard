@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Lato-Regular.ttf">
@@ -130,13 +131,73 @@
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherCell" rowHeight="80" id="Tm8-H4-Bdq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherCell" rowHeight="80" id="Tm8-H4-Bdq" customClass="WeatherCell" customModule="FlatWeather" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tm8-H4-Bdq" id="6dp-db-pR6">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KCf-LQ-ezX">
+                                                    <rect key="frame" x="8" y="8" width="584" height="64"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqk-bj-Idl">
+                                                            <rect key="frame" x="0.0" y="0.0" width="195" height="64"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="Clouds Mini" translatesAutoresizingMaskIntoConstraints="NO" id="4Z1-sg-Ah5">
+                                                            <rect key="frame" x="195" y="0.0" width="195" height="64"/>
+                                                        </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuw-bH-rca">
+                                                            <rect key="frame" x="390" y="0.0" width="195" height="64"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h9-JX-3Ax">
+                                                                    <rect key="frame" x="76" y="0.0" width="42" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="21" id="4wo-Ea-YPN"/>
+                                                                        <constraint firstAttribute="width" constant="42" id="vuD-Te-F2P"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="75°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAE-CU-tpb">
+                                                                    <rect key="frame" x="76" y="29" width="42" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="42" id="94Y-ci-gjL"/>
+                                                                        <constraint firstAttribute="height" constant="21" id="tMt-1O-mhA"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="hAE-CU-tpb" firstAttribute="top" secondItem="7h9-JX-3Ax" secondAttribute="bottom" constant="6" id="PBt-aj-IaD"/>
+                                                                <constraint firstItem="hAE-CU-tpb" firstAttribute="centerX" secondItem="cuw-bH-rca" secondAttribute="centerX" id="Qsa-tI-UIw"/>
+                                                                <constraint firstItem="7h9-JX-3Ax" firstAttribute="centerX" secondItem="cuw-bH-rca" secondAttribute="centerX" id="XpP-yj-qLE"/>
+                                                                <constraint firstItem="7h9-JX-3Ax" firstAttribute="top" secondItem="cuw-bH-rca" secondAttribute="top" id="yWN-h8-XJt"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KCf-LQ-ezX" firstAttribute="leading" secondItem="6dp-db-pR6" secondAttribute="leadingMargin" id="3MG-dm-ujY"/>
+                                                <constraint firstItem="KCf-LQ-ezX" firstAttribute="top" secondItem="6dp-db-pR6" secondAttribute="topMargin" id="FLZ-T6-zLS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KCf-LQ-ezX" secondAttribute="trailing" id="R0C-x4-RJW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="KCf-LQ-ezX" secondAttribute="bottom" id="X6P-sm-CCu"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="zqk-bj-Idl" id="RbS-Yj-Siy"/>
+                                            <outlet property="highTempLabel" destination="7h9-JX-3Ax" id="6c4-s0-hep"/>
+                                            <outlet property="lowTempLabel" destination="hAE-CU-tpb" id="JCV-l4-oZF"/>
+                                            <outlet property="weatherIcon" destination="4Z1-sg-Ah5" id="P9x-cS-spd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -167,6 +228,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Clouds Mini" width="34" height="25"/>
         <image name="Rain" width="92" height="92"/>
     </resources>
 </document>
