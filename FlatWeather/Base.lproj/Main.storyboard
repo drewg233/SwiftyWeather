@@ -130,7 +130,7 @@
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="Tm8-H4-Bdq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherCell" rowHeight="80" id="Tm8-H4-Bdq">
                                         <rect key="frame" x="0.0" y="28" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tm8-H4-Bdq" id="6dp-db-pR6">
@@ -152,6 +152,14 @@
                             <constraint firstAttribute="trailing" secondItem="kzm-7E-hKK" secondAttribute="trailing" id="paP-Yu-v5V"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentTempLabel" destination="0dx-0Y-GGn" id="0Jd-YD-lTk"/>
+                        <outlet property="currentWeatherImage" destination="yG8-hE-rxL" id="UJw-PN-DPQ"/>
+                        <outlet property="currentWeatherTypeLabel" destination="gga-yb-5mV" id="fyX-oa-ptz"/>
+                        <outlet property="dateLabel" destination="CHc-HJ-Rtl" id="hWg-y3-e58"/>
+                        <outlet property="locationLabel" destination="B4E-O4-kIk" id="yej-xY-90u"/>
+                        <outlet property="tableView" destination="tF3-38-BGY" id="qaW-Uq-vaM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
