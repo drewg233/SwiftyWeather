@@ -20,6 +20,7 @@
 		B92ED7411D515CBF00B5778D /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92ED7401D515CBF00B5778D /* Forecast.swift */; };
 		B92ED7431D515CD400B5778D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92ED7421D515CD400B5778D /* Date.swift */; };
 		B92ED7451D515DE000B5778D /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92ED7441D515DE000B5778D /* WeatherCell.swift */; };
+		B92ED7471D515FBD00B5778D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92ED7461D515FBD00B5778D /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B92ED7401D515CBF00B5778D /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		B92ED7421D515CD400B5778D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		B92ED7441D515DE000B5778D /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		B92ED7461D515FBD00B5778D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				B92ED7391D515B9E00B5778D /* CurrentWeather.swift */,
 				B92ED7401D515CBF00B5778D /* Forecast.swift */,
+				B92ED7461D515FBD00B5778D /* Location.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				B92ED73A1D515B9E00B5778D /* CurrentWeather.swift in Sources */,
 				B92ED7431D515CD400B5778D /* Date.swift in Sources */,
 				B92ED7211D51545000B5778D /* AppDelegate.swift in Sources */,
+				B92ED7471D515FBD00B5778D /* Location.swift in Sources */,
 				B92ED7451D515DE000B5778D /* WeatherCell.swift in Sources */,
 				B92ED73F1D515C8600B5778D /* Temperature.swift in Sources */,
 				B92ED7411D515CBF00B5778D /* Forecast.swift in Sources */,

@@ -15,7 +15,10 @@ let LONGITUDE = "&lon="
 let DAYCOUNT = "&cnt="
 let API_KEY = "&appid=APIKEYHERE"
 
-let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)35\(LONGITUDE)35\(API_KEY)"
-let FORCAST_WEATHER_URL = "\(BASE_FORECAST_URL)\(LATITUDE)35\(LONGITUDE)35\(DAYCOUNT)6\(API_KEY)"
+let locationLatitude = Location.sharedInstance.latitude
+let locationLongitude = Location.sharedInstance.longitude
+
+let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)\(locationLatitude)\(LONGITUDE)\(locationLongitude)\(API_KEY)"
+let FORCAST_WEATHER_URL = "\(BASE_FORECAST_URL)\(LATITUDE)\(locationLatitude)\(LONGITUDE)\(locationLongitude)\(DAYCOUNT)6\(API_KEY)"
 
 typealias DownloadComplete = () -> ()

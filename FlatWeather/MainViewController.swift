@@ -89,9 +89,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             currentLocation = newLocation
             print("Current Location: \(currentLocation)")
             if let latitude: Double = currentLocation.coordinate.latitude {
+                Location.sharedInstance.latitude = latitude
                 print("New Latitude: \(latitude)")
             }
             if let longitude: Double = currentLocation.coordinate.longitude {
+                Location.sharedInstance.longitude = longitude
                 print("New Longitude: \(longitude)")
             }
         }
