@@ -54,6 +54,8 @@ class CurrentWeather {
             let result = response.result
             
             if let jsonObject = result.value as? Dictionary<String, AnyObject> {
+                
+                
                 if let name = jsonObject["name"] as? String {
                     self._cityName = name
                     print(self._cityName)

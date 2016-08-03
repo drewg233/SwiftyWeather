@@ -6,8 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </mutableArray>
         <mutableArray key="Lato-Regular.ttf">
-            <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
@@ -35,14 +37,14 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sydney, Australia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4E-O4-kIk">
                                                 <rect key="frame" x="0.0" y="0.0" width="292" height="21"/>
-                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="19"/>
+                                                <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today, August 2nd 2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHc-HJ-Rtl">
                                                 <rect key="frame" x="292" y="0.0" width="292" height="21"/>
-                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="19"/>
+                                                <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -64,7 +66,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Ugx-UH-nJY"/>
                                             <constraint firstItem="hIQ-yy-XQt" firstAttribute="centerX" secondItem="fhD-su-GoD" secondAttribute="centerX" id="jXB-bn-eit"/>
@@ -74,9 +76,23 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9Xw-Uk-dEV">
                                         <rect key="frame" x="8" y="121" width="584" height="128"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rain" translatesAutoresizingMaskIntoConstraints="NO" id="yG8-hE-rxL">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3CG-jG-nr9">
                                                 <rect key="frame" x="0.0" y="0.0" width="292" height="128"/>
-                                            </imageView>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rain" translatesAutoresizingMaskIntoConstraints="NO" id="CvA-o0-e0g">
+                                                        <rect key="frame" x="96" y="14" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="1B8-Bc-LM7"/>
+                                                            <constraint firstAttribute="height" constant="100" id="o9w-L0-e8W"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="CvA-o0-e0g" firstAttribute="centerX" secondItem="3CG-jG-nr9" secondAttribute="centerX" id="Hs0-Dh-FCg"/>
+                                                    <constraint firstItem="CvA-o0-e0g" firstAttribute="centerY" secondItem="3CG-jG-nr9" secondAttribute="centerY" id="a86-Vr-eUx"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ata-xF-hN5">
                                                 <rect key="frame" x="292" y="0.0" width="292" height="128"/>
                                                 <subviews>
@@ -85,14 +101,13 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="Vze-f1-g77"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dx-0Y-GGn">
                                                         <rect key="frame" x="8" y="43" width="276" height="77"/>
-                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="90"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="90"/>
+                                                        <color key="textColor" red="0.96862745098039216" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -113,7 +128,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="j6F-fU-27i" firstAttribute="top" secondItem="fhD-su-GoD" secondAttribute="bottom" constant="12" id="0OE-wS-ELl"/>
                                     <constraint firstAttribute="trailing" secondItem="9Xw-Uk-dEV" secondAttribute="trailing" constant="8" id="0dA-1K-zxx"/>
@@ -131,7 +146,7 @@
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherCell" rowHeight="80" id="Tm8-H4-Bdq" customClass="WeatherCell" customModule="FlatWeather" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WeatherCell" rowHeight="80" id="Tm8-H4-Bdq" customClass="WeatherCell" customModule="FlatWeather" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tm8-H4-Bdq" id="6dp-db-pR6">
@@ -147,9 +162,23 @@
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="Clouds Mini" translatesAutoresizingMaskIntoConstraints="NO" id="4Z1-sg-Ah5">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eq-Vy-cof">
                                                             <rect key="frame" x="195" y="0.0" width="195" height="64"/>
-                                                        </imageView>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c5T-4M-pbE">
+                                                                    <rect key="frame" x="67" y="2" width="50" height="50"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="30" id="FqD-pc-UyE"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="sVb-jv-IBT"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="c5T-4M-pbE" firstAttribute="centerX" secondItem="1eq-Vy-cof" secondAttribute="centerX" id="RF5-Dd-Dku"/>
+                                                                <constraint firstItem="c5T-4M-pbE" firstAttribute="centerY" secondItem="1eq-Vy-cof" secondAttribute="centerY" id="o6E-8w-Fy2"/>
+                                                            </constraints>
+                                                        </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuw-bH-rca">
                                                             <rect key="frame" x="390" y="0.0" width="195" height="64"/>
                                                             <subviews>
@@ -174,7 +203,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstItem="hAE-CU-tpb" firstAttribute="top" secondItem="7h9-JX-3Ax" secondAttribute="bottom" constant="6" id="PBt-aj-IaD"/>
                                                                 <constraint firstItem="hAE-CU-tpb" firstAttribute="centerX" secondItem="cuw-bH-rca" secondAttribute="centerX" id="Qsa-tI-UIw"/>
@@ -192,17 +221,18 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="KCf-LQ-ezX" secondAttribute="bottom" id="X6P-sm-CCu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="dayLabel" destination="zqk-bj-Idl" id="RbS-Yj-Siy"/>
                                             <outlet property="highTempLabel" destination="7h9-JX-3Ax" id="6c4-s0-hep"/>
                                             <outlet property="lowTempLabel" destination="hAE-CU-tpb" id="JCV-l4-oZF"/>
-                                            <outlet property="weatherIcon" destination="4Z1-sg-Ah5" id="P9x-cS-spd"/>
+                                            <outlet property="weatherIcon" destination="c5T-4M-pbE" id="raj-z4-Fcc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="tF3-38-BGY" secondAttribute="trailing" id="3kj-ic-k4a"/>
                             <constraint firstItem="kzm-7E-hKK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9cy-hT-ie3"/>
@@ -215,7 +245,7 @@
                     </view>
                     <connections>
                         <outlet property="currentTempLabel" destination="0dx-0Y-GGn" id="0Jd-YD-lTk"/>
-                        <outlet property="currentWeatherImage" destination="yG8-hE-rxL" id="UJw-PN-DPQ"/>
+                        <outlet property="currentWeatherImage" destination="CvA-o0-e0g" id="Wta-HG-hE6"/>
                         <outlet property="currentWeatherTypeLabel" destination="gga-yb-5mV" id="fyX-oa-ptz"/>
                         <outlet property="dateLabel" destination="CHc-HJ-Rtl" id="hWg-y3-e58"/>
                         <outlet property="locationLabel" destination="B4E-O4-kIk" id="yej-xY-90u"/>
@@ -228,7 +258,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Clouds Mini" width="34" height="25"/>
-        <image name="Rain" width="92" height="92"/>
+        <image name="Rain" width="170" height="145"/>
     </resources>
 </document>
